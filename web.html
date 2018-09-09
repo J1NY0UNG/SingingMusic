@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Sing Web</title>
+    <script>
+        var sing = documnet.getElmentBuld("myAudio");
+        
+        function playAudio(){
+            sing.play();
+        }
+        
+        function pauseAudio(){
+            sing.pause();
+        }
+    </script>
+</head>
+<body>
+    <audio id = "myAudio">
+        <source src = "music/btsanswer.ogg" type = "audio/ogg">
+        <source src = "music/btsanswer.mp3" type = "audio/mpeg">
+    </audio>    
+        <p>BTS Love YourSelf "Answer"</p>
+        <button onclick = "playAudio()" type = "button">Play Button</button>
+        <button onclick = "pauseAudio()" type = "button">Pause Button</button>
+
+</body>
+</html>
